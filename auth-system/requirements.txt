@@ -1,0 +1,15 @@
+fastapi==0.141.1
+uvicorn==0.53.0
+SQLAlchemy==2.0.53
+pydantic==2.13.5
+email-validator==2.3.0
+passlib==1.7.4
+# passlib 1.7.4 reads bcrypt.__about__, removed in bcrypt 4.1. On 4.1-4.3 that
+# is only a noisy logged traceback; on bcrypt 5.x hashing fails outright with
+# "password cannot be longer than 72 bytes". Keep bcrypt below 4.1.
+bcrypt==4.0.1
+python-jose[cryptography]==3.5.0
+# Required by OAuth2PasswordRequestForm to parse the form-encoded login body.
+python-multipart==0.0.32
+# Used only by verify.py.
+httpx==0.28.1
