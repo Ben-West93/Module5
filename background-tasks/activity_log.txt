@@ -1,0 +1,5 @@
+2026-09-15T18:59:42.156746+00:00 | user_id=1 | created student 1 (ada@school.example)
+2026-09-15T18:59:42.161604+00:00 | user_id=1 | created student 2 (alan@school.example)
+2026-09-15T18:59:42.172368+00:00 | user_id=1 | deleted student 2 (Alan Turing, alan@school.example)
+2026-09-15T18:59:42.175151+00:00 | user_id=1 | requested enrollment report 28b3e43b-d352-4c40-b93e-361404f43a63 (500 rows)
+2026-09-15T18:59:42.177784+00:00 | user_id=1 | queued a notification to principal@school.example

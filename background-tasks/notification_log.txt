@@ -1,0 +1,3 @@
+2026-09-15T18:59:44.157238+00:00 | to=ada@school.example | Welcome, Ada Lovelace. You are enrolled in grade 11.
+2026-09-15T18:59:44.163821+00:00 | to=alan@school.example | Welcome, Alan Turing. Your record is on file for grade 12; you are not currently enrolled.
+2026-09-15T18:59:44.179191+00:00 | to=principal@school.example | The enrollment report has been requested.
