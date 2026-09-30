@@ -1,0 +1,26 @@
+# exercises/security-basics/requirements.txt
+#
+# Install with:  pip install -r requirements.txt
+
+fastapi>=0.110
+uvicorn[standard]>=0.27
+sqlalchemy>=2.0
+pydantic>=2.6
+
+# --- L10 ---
+#
+# CORSMiddleware ships with Starlette and the sanitizer is `re`, so the
+# brief itself needed nothing new. These were added after reviewer feedback:
+#
+# slowapi   the per-endpoint rate limits (it brings in the `limits` package,
+#           whose in-memory moving-window storage it uses)
+# bcrypt    password hashing for the login endpoint
+# PyJWT     the signed token a successful login returns
+slowapi>=0.1.9
+bcrypt>=4.1
+PyJWT>=2.8
+
+# httpx is here for verify_security.py: it is the transport under TestClient,
+# and the script also uses it directly against a live uvicorn server to test
+# the rate limits under genuinely concurrent requests.
+httpx>=0.27
